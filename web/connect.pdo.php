@@ -1,10 +1,12 @@
 <?php	  
-    // Web Programming
-    // Name: Alan Pedersen
-    // ID: P225139
-    // Date: 3/04/2020
-    // Project 
-    // script to create a connection to the database
+    /*
+        Web Programming
+        Name: Alan Pedersen
+        ID: P225139
+        Date: 3/04/2020
+        Project 
+        script to create a connection to the database
+    */
 
     $servername = "localhost";
     $username = "root";

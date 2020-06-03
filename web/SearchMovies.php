@@ -43,7 +43,7 @@
         }
 
         nav a:hover {
-        	color: red;
+            color: red;
         }
         
         body {
@@ -168,23 +168,36 @@
                         id="sortBy" size="10" style="width: 150px;"
                         title="select value to results sort by">
                     <option value="Title" 
-                        <?php if (isset($_POST["sortBy"]) && $_POST["sortBy"] == "Title") echo "selected";?> 
-                        <?php if (!isset($_POST["sortBy"])) echo "selected";?>> 
+                        <?php if (isset($_POST["sortBy"]) 
+                            && $_POST["sortBy"] == "Title") 
+                            echo "selected";?> 
+                        <?php if (!isset($_POST["sortBy"])) 
+                            echo "selected";?>> 
                         Title </option>
                     <option value="StudioName" 
-                        <?php if (isset($_POST["sortBy"]) && $_POST["sortBy"] == "StudioName") echo "selected";?>> 
+                        <?php if (isset($_POST["sortBy"]) 
+                            && $_POST["sortBy"] == "StudioName") 
+                            echo "selected";?>> 
                         Studio </option>
                     <option value="RecRetPrice" 
-                        <?php if (isset($_POST["sortBy"]) && $_POST["sortBy"] == "RecRetPrice") echo "selected";?>> 
+                        <?php if (isset($_POST["sortBy"]) 
+                            && $_POST["sortBy"] == "RecRetPrice") 
+                            echo "selected";?>> 
                         Price </option>
                     <option value="RatingCode" 
-                        <?php if (isset($_POST["sortBy"]) && $_POST["sortBy"] == "RatingCode") echo "selected";?>> 
+                        <?php if (isset($_POST["sortBy"]) 
+                            && $_POST["sortBy"] == "RatingCode") 
+                            echo "selected";?>> 
                         Rating </option>
                     <option value="Year" 
-                        <?php if (isset($_POST["sortBy"]) && $_POST["sortBy"] == "Year") echo "selected";?>> 
+                        <?php if (isset($_POST["sortBy"]) 
+                            && $_POST["sortBy"] == "Year") 
+                            echo "selected";?>> 
                         Year </option>
                     <option value="GenreCode" 
-                        <?php if (isset($_POST["sortBy"]) && $_POST["sortBy"] == "GenreCode") echo "selected";?>> 
+                        <?php if (isset($_POST["sortBy"]) 
+                            && $_POST["sortBy"] == "GenreCode") 
+                            echo "selected";?>> 
                         Genre </option>
                 </select>
            </div>
