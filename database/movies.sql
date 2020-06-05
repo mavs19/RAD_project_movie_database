@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Jun 02, 2020 at 06:13 AM
+-- Generation Time: Jun 05, 2020 at 09:41 AM
 -- Server version: 10.4.6-MariaDB
 -- PHP Version: 7.3.9
 
@@ -2921,7 +2921,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (551, 502),
 (552, 2072),
 (553, 3021),
-(554, 2003),
+(554, 743),
 (555, 3489),
 (556, 3487),
 (557, 3487),
@@ -2988,7 +2988,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (618, 2129),
 (619, 267),
 (620, 1270),
-(621, 587),
+(621, 743),
 (622, 698),
 (623, 729),
 (624, 552),
@@ -3094,7 +3094,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (724, 2780),
 (725, 1517),
 (726, 102),
-(727, 378),
+(727, 743),
 (728, 3487),
 (729, 773),
 (730, 3487),
@@ -3118,9 +3118,9 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (748, 2575),
 (749, 3489),
 (750, 3487),
-(751, 2886),
-(752, 854),
-(753, 643),
+(751, 2889),
+(752, 857),
+(753, 646),
 (754, 1314),
 (755, 281),
 (756, 459),
@@ -3136,7 +3136,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (766, 2923),
 (767, 269),
 (768, 2824),
-(769, 3487),
+(769, 3491),
 (770, 3489),
 (771, 959),
 (772, 3487),
@@ -3298,7 +3298,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (928, 2151),
 (929, 4373),
 (930, 4620),
-(931, 2725),
+(931, 2728),
 (932, 2672),
 (933, 3489),
 (934, 3136),
@@ -3396,9 +3396,9 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (1026, 1056),
 (1027, 1565),
 (1028, 1545),
-(1029, 272),
-(1030, 739),
-(1031, 5086),
+(1029, 744),
+(1030, 744),
+(1031, 744),
 (1032, 3196),
 (1033, 3297),
 (1034, 2797),
@@ -3521,7 +3521,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (1151, 3205),
 (1152, 4918),
 (1153, 458),
-(1154, 373),
+(1154, 374),
 (1155, 3487),
 (1156, 3489),
 (1157, 929),
@@ -3604,7 +3604,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (1234, 1799),
 (1235, 1961),
 (1236, 1499),
-(1237, 3208),
+(1237, 744),
 (1238, 2847),
 (1239, 3837),
 (1240, 278),
@@ -3964,7 +3964,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (1594, 348),
 (1595, 983),
 (1596, 890),
-(1597, 502),
+(1597, 503),
 (1598, 819),
 (1599, 3042),
 (1600, 526),
@@ -4166,7 +4166,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (1796, 5130),
 (1797, 1716),
 (1798, 688),
-(1799, 497),
+(1799, 498),
 (1800, 2246),
 (1801, 561),
 (1802, 568),
@@ -4484,10 +4484,10 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (2114, 623),
 (2115, 868),
 (2116, 479),
-(2117, 772),
+(2117, 776),
 (2118, 433),
 (2119, 828),
-(2120, 853),
+(2120, 857),
 (2121, 777),
 (2122, 329),
 (2123, 292),
@@ -4503,10 +4503,10 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (2133, 165),
 (2134, 192),
 (2135, 457),
-(2136, 708),
+(2136, 743),
 (2137, 178),
 (2138, 2347),
-(2139, 170),
+(2139, 743),
 (2140, 611),
 (2141, 555),
 (2142, 932),
@@ -4517,7 +4517,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (2147, 320),
 (2148, 759),
 (2149, 842),
-(2150, 932),
+(2150, 933),
 (2151, 142),
 (2152, 3135),
 (2153, 4960),
@@ -4555,7 +4555,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (2185, 3842),
 (2186, 2457),
 (2187, 30),
-(2188, 48),
+(2188, 743),
 (2189, 140),
 (2190, 548),
 (2191, 327),
@@ -4587,7 +4587,7 @@ INSERT INTO `tbldatasearchcount` (`IDcount`, `SearchCount`) VALUES
 (2217, 3503),
 (2218, 264),
 (2219, 2582),
-(2220, 825),
+(2220, 743),
 (2221, 168),
 (2222, 338),
 (2223, 186),
@@ -8643,6 +8643,39 @@ INSERT INTO `tbllibversion` (`versionId`, `VersionCode`) VALUES
 -- --------------------------------------------------------
 
 --
+-- Table structure for table `tbluserdetails`
+--
+
+DROP TABLE IF EXISTS `tbluserdetails`;
+CREATE TABLE `tbluserdetails` (
+  `userId` int(11) NOT NULL,
+  `userFirstName` varchar(50) NOT NULL,
+  `userFamilyName` varchar(50) NOT NULL,
+  `userEmail` varchar(100) NOT NULL,
+  `newsletter` tinyint(1) NOT NULL,
+  `newsflash` tinyint(1) NOT NULL,
+  `active` tinyint(1) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `tbluserdetails`
+--
+
+INSERT INTO `tbluserdetails` (`userId`, `userFirstName`, `userFamilyName`, `userEmail`, `newsletter`, `newsflash`, `active`) VALUES
+(1, 'ford', 'prefect', 'f.p@hhg.org', 1, 1, 1),
+(2, 'fred', 'flintstone', 'f.flinstone@rubble.com', 1, 1, 1),
+(3, 'wilma', 'flintstone', 'w.flinstone@rubble.com', 1, 1, 1),
+(4, 'barney', 'rubble', 'b.rubble@rubble.com', 1, 1, 1),
+(5, 'pebbles', 'flintstone', 'p.flinstone@rubble.com', 1, 1, 1),
+(6, 'dino', 'flintstone', 'dino.flinstone@rubble.com', 1, 1, 0),
+(7, 'neddie', 'seagoon', 'neddie@goons.com', 0, 1, 1),
+(8, 'minnie', 'bannister', 'minnie@goons.com', 0, 0, 1),
+(9, 'henry', 'crun', 'crun@goons.com', 1, 0, 1),
+(10, 'eccles', 'goon', 'eccles@goons.com', 1, 1, 0);
+
+-- --------------------------------------------------------
+
+--
 -- Stand-in structure for view `vwgettop10records`
 -- (See below for the actual view)
 --
@@ -8783,6 +8816,22 @@ ALTER TABLE `tbllibstudio`
 --
 ALTER TABLE `tbllibversion`
   ADD PRIMARY KEY (`versionId`);
+
+--
+-- Indexes for table `tbluserdetails`
+--
+ALTER TABLE `tbluserdetails`
+  ADD PRIMARY KEY (`userId`);
+
+--
+-- AUTO_INCREMENT for dumped tables
+--
+
+--
+-- AUTO_INCREMENT for table `tbluserdetails`
+--
+ALTER TABLE `tbluserdetails`
+  MODIFY `userId` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=11;
 
 --
 -- Constraints for dumped tables
